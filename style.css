@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1;
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ********************************* */
+/* BACKGROUND */
+/* ********************************* */
+.circle {
+  position: absolute;
+  z-index: -1;
+}
+
+.top {
+  bottom: 35%;
+  right: 50%;
+}
+
+.bottom {
+  top: 45%;
+  left: 50%;
+}
+
+/* ********************************* */
+/* GENERAL */
+/* ********************************* */
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  gap: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(227, 15%, 88%);
+}
+
+/* ********************************* */
+/* AVATAR CARD */
+/* ********************************* */
+.avatar-card {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.pattern {
+  width: 100%;
+}
+
+.avatar-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+/* ********************************* */
+/* CONTENT */
+/* ********************************* */
+.avatar-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0 0 2rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.city {
+  font-size: 1.6rem;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+/* ********************************* */
+/* SOCIAL MEDIA SECTION */
+/* ********************************* */
+.social-media-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem 2rem;
+}
+
+.soc-media-component {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.quantity {
+  color: hsl(229, 23%, 23%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.type {
+  color: hsl(227, 10%, 46%);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 30rem;
+  }
+
+  .avatar-img {
+    width: 10rem;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .city {
+    font-size: 1.4rem;
+  }
+
+  .quantity {
+    font-size: 1.6rem;
+  }
+
+  .type {
+    font-size: 1rem;
+  }
+}
